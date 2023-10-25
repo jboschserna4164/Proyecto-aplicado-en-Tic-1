@@ -26,26 +26,62 @@ public class Principal extends javax.swing.JFrame {
     private void initComponents() {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        InventarioButton = new javax.swing.JButton();
+        AgregarButton = new javax.swing.JButton();
+        SimulacionButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLayeredPane1.setForeground(new java.awt.Color(255, 255, 255));
         jLayeredPane1.setPreferredSize(new java.awt.Dimension(905, 603));
+        jLayeredPane1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setText("SISTEMA DE RIEGO AUTOMATIZADO");
+        jLayeredPane1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, 420, 30));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\jhoni\\OneDrive\\Documentos\\GitHub\\Proyecto-aplicado-en-Tic-1\\Riego_automatizado\\src\\main\\resources\\Imagenes\\Riego-remove.png")); // NOI18N
+        jLabel4.setText("jLabel4");
+        jLayeredPane1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, 530, 380));
+
+        jPanel1.setBackground(new java.awt.Color(0, 153, 0));
+        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        InventarioButton.setText("Inventario de plantas");
+        InventarioButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                InventarioButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(InventarioButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 150, 70));
+
+        AgregarButton.setText("Agregar nueva planta");
+        AgregarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AgregarButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(AgregarButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 40, 150, 70));
+
+        SimulacionButton1.setText("Empezar simulación");
+        SimulacionButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SimulacionButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(SimulacionButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, 150, 70));
+
+        jLayeredPane1.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, 300, 370));
+
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\jhoni\\OneDrive\\Documentos\\GitHub\\Proyecto-aplicado-en-Tic-1\\Riego_automatizado\\src\\main\\resources\\Imagenes\\Background (1).jpg")); // NOI18N
-
-        jLayeredPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
-        jLayeredPane1.setLayout(jLayeredPane1Layout);
-        jLayeredPane1Layout.setHorizontalGroup(
-            jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        jLayeredPane1Layout.setVerticalGroup(
-            jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        jLayeredPane1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -65,6 +101,18 @@ public class Principal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void InventarioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InventarioButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_InventarioButtonActionPerformed
+
+    private void AgregarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgregarButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AgregarButtonActionPerformed
+
+    private void SimulacionButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SimulacionButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SimulacionButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -102,8 +150,14 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton AgregarButton;
+    private javax.swing.JButton InventarioButton;
+    private javax.swing.JButton SimulacionButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 
 }
